@@ -1,0 +1,39 @@
+[user]
+	name = Frédéric Cabestre
+	email = frederic.cabestre@free.fr
+	signingkey = F1C86A84
+
+[color]
+	ui = true
+
+[core]
+	editor = emacs
+	pager = less
+
+[commit]
+	template = /home/fred/.gitmessage.txt
+
+[push]
+	default = simple
+
+[github]
+	user = fcabestre
+	token = 7373f948be1d727c4d72a634c7ed4832
+
+[alias]
+	ci = commit
+        co = checkout
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+        st = status -sb
+
+[gc]
+	auto=1
+
+[branch]
+	autosetuprebase = always
+
+[diff]
+	external = /home/fred/bin/meld-wrapper
+
+[push]
+	default = simple
