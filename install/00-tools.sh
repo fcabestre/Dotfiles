@@ -5,5 +5,4 @@ sudo apt-get install -y \
     jq \
     iftop htop \
     tree \
-    unzip \
-    build-essential
+    unzip

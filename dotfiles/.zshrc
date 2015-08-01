@@ -8,7 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(golang sbt mvn history-substring-search)
+plugins=(history-substring-search)
 
 ZSH_CUSTOM=~/.zsh_custom
 
