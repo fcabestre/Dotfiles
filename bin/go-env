@@ -1,4 +1,0 @@
-export GOOS=linux 
-export GOARCH=arm 
-export GOARM=6
-export GOPATH=~/Projets/go-rpi/workspace
