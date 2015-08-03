@@ -63,4 +63,4 @@ alias search='sudo apt-cache search'
 alias wholisten='sudo netstat -tpuan | grep LISTEN'
 
 # Source optional ~/.myzshrc
-[ -f ~/.myzshrc ] && source ~/.myzshrc
+[ -f ~/.local_zshrc ] && source ~/.local_zshrc
