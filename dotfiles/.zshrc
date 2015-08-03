@@ -12,7 +12,7 @@ plugins=(history-substring-search)
 
 ZSH_CUSTOM=~/.zsh_custom
 
-export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/home/fred/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export GOROOT=/usr/local/lib/go
 
 source $ZSH/oh-my-zsh.sh
@@ -54,6 +54,7 @@ function man-ps() {
 #
 alias ss='sudo -s'
 alias tmux='tmux -2'
+alias x509='openssl x509'
 
 # Apt
 alias get='sudo apt-get install'

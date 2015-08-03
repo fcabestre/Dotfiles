@@ -31,8 +31,8 @@ cp -rf ~/.dotfiles/dotfiles/.[a-z]* ~/
 mkdir -p ~/bin && cp -f ~/.dotfiles/bin/* ~/bin
 
 # Restore git user info
-git config --global user.name $gitUserName
-git config --global user.email $gitUserEmail
+git config --global user.name "$gitUserName"
+git config --global user.email "$gitUserEmail"
 
 [ "x$gitUserName" = "x" ] && \
   echo "Please update your git user.name, user.email : vi ~/.gitconfig"
