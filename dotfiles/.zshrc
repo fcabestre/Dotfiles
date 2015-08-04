@@ -1,4 +1,4 @@
-export ZSH=/home/fred/.oh-my-zsh
+export ZSH=${USER}/.oh-my-zsh
 
 ZSH_THEME="avit"
 
@@ -12,7 +12,7 @@ plugins=(history-substring-search)
 
 ZSH_CUSTOM=~/.zsh_custom
 
-export PATH="/home/fred/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="${USER}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export GOROOT=/usr/local/lib/go
 
 source $ZSH/oh-my-zsh.sh

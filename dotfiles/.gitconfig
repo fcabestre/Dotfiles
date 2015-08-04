@@ -10,7 +10,7 @@
 	pager = less
 
 [commit]
-	template = /home/fred/.gitmessage.txt
+	template = ${USER}/.gitmessage.txt
 
 [push]
 	default = simple
