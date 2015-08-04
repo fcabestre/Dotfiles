@@ -1,5 +1,5 @@
 [user]
-	name = Frédéric Cabestre
+	name = "Frédéric Cabestre"
 	email = frederic.cabestre@free.fr
 
 [color]
@@ -10,7 +10,7 @@
 	pager = less
 
 [commit]
-	template = ${USER}/.gitmessage.txt
+	template = ${HOME}/.gitmessage.txt
 
 [push]
 	default = simple
