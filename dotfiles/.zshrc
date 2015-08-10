@@ -52,7 +52,11 @@ function man-ps() {
 
 function gokata() {
     export GOPATH=/home/fred/Projets/GoKatas
-    cd /home/fred/Projets/GoKatas
+    cd /home/fred/Projets/GoKatas/src/github.com/fcabestre/GoKatas
+}
+
+function etime() {
+    /usr/bin/time --format '%Uu %Ss %er %MkB %C' "$@"
 }
 
 ######################################

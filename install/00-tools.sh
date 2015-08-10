@@ -6,4 +6,5 @@ sudo apt-get install -y \
     iftop htop \
     tree \
     unzip \
+    encfs \
     socat
