@@ -51,8 +51,8 @@ function man-ps() {
 }
 
 function gokata() {
-    export GOPATH=/home/fred/Projets/GoKatas
-    cd /home/fred/Projets/GoKatas/src/github.com/fcabestre/GoKatas
+    export GOPATH=/home/fred/Projets/gokatas
+    cd /home/fred/Projets/GoKatas/src/github.com/fcabestre/gokatas
 }
 
 function etime() {
@@ -71,6 +71,10 @@ alias gety='sudo apt-get install -y'
 alias search='sudo apt-cache search'
 
 alias wholisten='sudo netstat -tpuan | grep LISTEN'
+
+# Docker
+alias d='docker'
+alias dm='docker-machine'
 
 # Source optional ~/.myzshrc
 [ -f ~/.local_zshrc ] && source ~/.local_zshrc
