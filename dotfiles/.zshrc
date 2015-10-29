@@ -59,6 +59,9 @@ function etime() {
     /usr/bin/time --format '%Uu %Ss %er %MkB %C' "$@"
 }
 
+function drm()  { docker rm $(docker ps -qa); }
+function dri()  { docker rmi $(docker images -q --filter "dangling=true"); }
+
 ######################################
 #
 alias ss='sudo -s'
