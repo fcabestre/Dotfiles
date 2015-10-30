@@ -7,4 +7,5 @@ sudo apt-get install -y \
     tree \
     unzip \
     encfs \
-    socat
+    socat \
+    dconf-cli

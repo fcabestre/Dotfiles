@@ -23,6 +23,9 @@ else
     export EDITOR='emacs'
 fi
 
+eval $(dircolors ~/.dircolors)
+export TERM=xterm-256color
+
 ######################################
 #
 # @help randpwd $length
