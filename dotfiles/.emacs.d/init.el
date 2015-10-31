@@ -7,6 +7,10 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) 
 
+; Theme
+;
+(load-theme 'wombat t)
+
 ; Multiple cursors
 ;
 (require 'multiple-cursors)
@@ -16,3 +20,4 @@
 (global-set-key (kbd "C-c >") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c <") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c =") 'mc/mark-all-like-this)
+
