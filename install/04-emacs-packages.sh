@@ -1,16 +1,16 @@
 cat <<EOF > /tmp/install-pkg.el
 (require 'package) 
+(package-initialize)
 (add-to-list 'package-archives
              '("melpa-stable" . "http://melpa.org/packages/") t)
 (package-refresh-contents)
+(defvar my-packages
+  '(go-mode go-autocomplete rust-mode racer multiple-cursors ensime scala-mode2)
+  "A list of packages to ensure are installed at launch.")
 
-;;(package-install 'multiple-cursors)
-;;(package-install 'scala-mode2)
-(package-install 'ensime)
-(package-install 'go-mode)
-(package-install 'go-autocomplete)
-(package-install 'rust-mode)
-(package-install 'racer)
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p))))
 EOF
 
 emacs --batch -l /tmp/install-pkg.el
