@@ -1,4 +1,4 @@
-export ZSH=~/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="avit"
 
@@ -12,7 +12,7 @@ plugins=(history-substring-search ubuntu autoenv)
 
 ZSH_CUSTOM=~/.zsh_custom
 
-export PATH="/home/fred/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export GOROOT=/usr/local/lib/go
 
 source $ZSH/oh-my-zsh.sh
@@ -41,7 +41,7 @@ function updot() { cd ~/.dotfiles; git pull --rebase; ./install.sh; }
 function geoip() { curl -s www.telize.com/geoip | jq .; }
 
 function mount-vault() {
-    [[ ! -d ~/Privé/Fred ]] && mkdir -p ~/Privé/Dropbox
+    [[ ! -d ~/Privé/Dropbox ]] && mkdir -p ~/Privé/Dropbox
     encfs ~/Dropbox/Privé ~/Privé/Dropbox
 }
 
@@ -51,11 +51,6 @@ function unmount-vault() {
 
 function man-ps() {
     man -Tps $1 > ~/$1.ps
-}
-
-function gokata() {
-    export GOPATH=/home/fred/Projets/gokatas
-    cd /home/fred/Projets/GoKatas/src/github.com/fcabestre/gokatas
 }
 
 function etime() {
@@ -80,7 +75,8 @@ alias wholisten='sudo netstat -tpuan | grep LISTEN'
 
 # Docker
 alias d='docker'
-alias dm='docker-machine'
+alias dm='docker-machine
+alias dc='docker-compose
 
 # Source optional ~/.myzshrc
 [ -f ~/.local_zshrc ] && source ~/.local_zshrc
