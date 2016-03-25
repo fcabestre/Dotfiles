@@ -13,7 +13,6 @@ plugins=(history-substring-search ubuntu autoenv)
 ZSH_CUSTOM=~/.zsh_custom
 
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-export GOROOT=/usr/local/lib/go
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,8 +74,8 @@ alias wholisten='sudo netstat -tpuan | grep LISTEN'
 
 # Docker
 alias d='docker'
-alias dm='docker-machine
-alias dc='docker-compose
+alias dm='docker-machine'
+alias dc='docker-compose'
 
 # Source optional ~/.myzshrc
 [ -f ~/.local_zshrc ] && source ~/.local_zshrc
