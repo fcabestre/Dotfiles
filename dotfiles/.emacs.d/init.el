@@ -21,3 +21,13 @@
 (global-set-key (kbd "C-c <") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c =") 'mc/mark-all-like-this)
 
+; Neotree 
+;
+(setq projectile-switch-project-action 'neotree-projectile-action)
+(setq neo-smart-open t)
+(global-set-key (kbd "C-c t") 'neotree-toggle)
+
+; Fuzzy finder
+;
+(global-set-key (kbd "C-c f") 'fiplr-find-file)
+(global-set-key (kbd "C-c d") 'fiplr-find-directory)
