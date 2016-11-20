@@ -15,6 +15,8 @@ ZSH_CUSTOM=~/.zsh_custom
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash
 
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vi'
