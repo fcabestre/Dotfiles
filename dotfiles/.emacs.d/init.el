@@ -13,7 +13,6 @@
 
 ; Multiple cursors
 ;
-(require 'multiple-cursors)
 (global-set-key (kbd "C-c l") 'mc/edit-lines)
 (global-set-key (kbd "C-c e") 'mc/edit-ends-of-lines)
 (global-set-key (kbd "C-c a") 'mc/edit-beginnings-of-lines)
@@ -31,3 +30,14 @@
 ;
 (global-set-key (kbd "C-c f") 'fiplr-find-file)
 (global-set-key (kbd "C-c d") 'fiplr-find-directory)
+
+; Alchemist
+;
+(setq alchemist-mix-command "~/bin/mix")
+(setq alchemist-iex-program-name "~/bin/iex") 
+(setq alchemist-execute-command "~/bin/elixir") 
+(setq alchemist-compile-command "~/bin/elixirc")
+
+; Company
+;
+(add-hook 'after-init-hook 'global-company-mode)
