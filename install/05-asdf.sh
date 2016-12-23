@@ -1,5 +1,5 @@
 # Clone or update autoenv 
-if [ ! -d ~/.autoenv ]
+if [ ! -d ~/.asdf ]
 then
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.0
 else
