@@ -34,6 +34,9 @@ mkdir -p ~/bin && cp -f ~/.dotfiles/bin/* ~/bin
 git config --global user.name "$gitUserName"
 git config --global user.email "$gitUserEmail"
 
+# Set global ignore file
+git config --global core.excludesfile '~/.gitignore'
+
 [ "x$gitUserName" = "x" ] && \
   echo "Please update your git user.name, user.email : vi ~/.gitconfig"
 
