@@ -8,7 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(history-substring-search ubuntu autoenv)
+plugins=(history-substring-search ubuntu autoenv wd)
 
 ZSH_CUSTOM=~/.zsh_custom
 
