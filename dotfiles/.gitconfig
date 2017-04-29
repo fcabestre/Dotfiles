@@ -1,13 +1,14 @@
 [user]
-	name = "Frédéric Cabestre"
-	email = frederic.cabestre@free.fr
+	name = Frédéric Cabestre
+	email = frederic.cabestre@easymile.com
 
 [color]
 	ui = true
 
 [core]
-	editor = emacs
+	editor = emacsclient -t
 	pager = less
+	excludesfile = ~/.gitignore
 
 [commit]
 	template = ~/.gitmessage.txt
@@ -29,7 +30,10 @@
 
 [alias]
 	ci = commit
-        co = checkout
+				co = checkout
+	cob = checkout -b
 	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
-        st = status -sb
-
+	mff = merge --ff-only
+	psu = push --set-upstream origin
+	pl = push --force-with-lease
+				st = status -sb

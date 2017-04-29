@@ -8,7 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(history-substring-search ubuntu autoenv wd)
+plugins=(history-substring-search autoenv wd)
 
 ZSH_CUSTOM=~/.zsh_custom
 
@@ -21,7 +21,7 @@ source $HOME/.asdf/completions/asdf.bash
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vi'
 else
-    export EDITOR='emacs'
+    export EDITOR='emacsclient -t'
 fi
 
 eval $(dircolors ~/.dircolors)
@@ -64,8 +64,9 @@ function dri()  { docker rmi $(docker images -q --filter "dangling=true"); }
 ######################################
 #
 alias ss='sudo -s'
-alias tmux='tmux -2'
-alias x509='openssl x509'
+alias x509='openssl x509 -text -noout -in'
+alias ect='emacsclient -t'
+alias ecc='emacsclient -c'
 
 # Apt
 alias get='sudo apt-get install'
