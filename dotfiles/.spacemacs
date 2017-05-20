@@ -36,30 +36,27 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     helm
+     ansible
      (auto-completion :variables auto-completion-enable-snippets-in-popup t)
      better-defaults
+     csv
+     dash
+     docker
+     elixir
      emacs-lisp
+     erlang
      git
+     go
+     (gtags :disabled-for elixir shell-script)
+     helm
+     java
+     javascript
      markdown
      org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     rust
+     scala
      spell-checking
      syntax-checking
-     ;; version-control
-     elixir
-     erlang
-     go
-     java
-     scala
-     rust
-     ansible
-     docker
-     (gtags :disabled-for elixir shell-script)
-     javascript
-     dash
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
