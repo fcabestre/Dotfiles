@@ -1,11 +1,12 @@
 sudo apt-get install -y \
      tmux \
-     meld \
+     meld tig \
      emacs25-nox \
-     wget curl \
-     iftop htop \
+     wget curl httpie jq \
+     iftop htop inxi \
      tree \
      unzip \
      encfs \
      socat \
-     terminator
+     chkrootkit \
+     bat terminator
